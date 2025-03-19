@@ -1,0 +1,149 @@
+{
+	"name": "my-midway-project",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"dependencies": {
+		"@midwayjs/bootstrap": "^3.12.0",
+		"@midwayjs/core": "^3.12.0",
+		"@midwayjs/info": "^3.12.0",
+		"@midwayjs/koa": "^3.12.0",
+		"@midwayjs/logger": "^3.1.0",
+		"@midwayjs/redis": "3",
+		"@midwayjs/swagger": "3",
+		"@midwayjs/typeorm": "3",
+		"@midwayjs/validate": "^3.12.0",
+		"cz-emoji-conventional": "^1.2.0",
+		"mysql2": "^3.13.0",
+		"typeorm": "^0.3.21"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@eslint/eslintrc": "^3.3.0",
+		"@eslint/js": "^9.22.0",
+		"@midwayjs/mock": "^3.12.0",
+		"@types/jest": "^29.2.0",
+		"@types/node": "14",
+		"@typescript-eslint/eslint-plugin": "^8.26.1",
+		"@typescript-eslint/parser": "^8.26.1",
+		"commitizen": "^4.3.1",
+		"commitlint-config-gitmoji": "^2.3.1",
+		"cross-env": "^6.0.0",
+		"cz-conventional-emoji": "^1.0.2",
+		"cz-emoji-chinese": "^0.3.1",
+		"eslint": "9.22.0",
+		"globals": "^16.0.0",
+		"husky": "^9.1.7",
+		"jest": "^29.2.2",
+		"lint-staged": "^15.5.0",
+		"mwtsc": "^1.15.1",
+		"standard-version": "^9.5.0",
+		"swagger-ui-dist": "^5.20.1",
+		"ts-jest": "^29.0.3",
+		"typescript": "~5.2.2"
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"scripts": {
+		"start": "NODE_ENV=production node ./bootstrap.js",
+		"dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/app.js",
+		"test": "cross-env NODE_ENV=unittest jest",
+		"cov": "jest --coverage",
+		"lint": "mwts check",
+		"lint:fix": "mwts fix",
+		"ci": "npm run cov",
+		"build": "mwtsc --cleanOutDir",
+		"prepare": "husky",
+		"commit": "git add . && git-cz",
+		"release": "standard-version"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-emoji-chinese",
+			"useGitmojis": true
+		},
+		"cz-emoji-chinese": {
+			"skipQuestions": [
+				"scope",
+				"issues",
+				"body"
+			],
+			"types": [
+				{
+					"emoji": "🐛",
+					"code": "bug:",
+					"description": "修复 Bug",
+					"name": "fix"
+				},
+				{
+					"emoji": "🎨",
+					"code": "art:",
+					"description": "改进代码的结构/格式",
+					"name": "style"
+				},
+				{
+					"emoji": "✨",
+					"code": "sparkles:",
+					"description": "引入新特性",
+					"name": "feature"
+				},
+				{
+					"emoji": "✂️",
+					"code": "prune:",
+					"description": "移除代码/文件",
+					"name": "prune"
+				},
+				{
+					"emoji": "💄",
+					"code": "lipstick:",
+					"description": "更新UI和样式文件",
+					"name": "ui"
+				},
+				{
+					"emoji": "📝",
+					"code": "pencil:",
+					"description": "写文档",
+					"name": "docs"
+				},
+				{
+					"emoji": "🎉",
+					"code": "init:",
+					"description": "初始化提交",
+					"name": "init"
+				},
+				{
+					"emoji": "🔖",
+					"code": "bookmark:",
+					"description": "发布版本",
+					"name": "release"
+				},
+				{
+					"emoji": "🚧",
+					"code": "construction:",
+					"description": "正在进行中的工作",
+					"name": "wip"
+				},
+				{
+					"emoji": "🔧",
+					"code": "wrench:",
+					"description": "修改配置文件",
+					"name": "config"
+				},
+				{
+					"emoji": "🔀",
+					"code": "twisted_rightwards_arrows:",
+					"description": "合并分支",
+					"name": "merge"
+				}
+			]
+		}
+	},
+	"author": "anonymous",
+	"license": "MIT"
+}
