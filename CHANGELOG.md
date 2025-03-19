@@ -2,10 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [3.0.0](https://github.com/CodeNoobStar/midway-admin-server/compare/v2.0.0...v3.0.0) (2025-03-19)
-
-## [2.0.0](https://github.com/CodeNoobStar/midway-admin-server/compare/v1.0.1...v2.0.0) (2025-03-19)
-
 ### 1.0.1 (2025-03-19)
 
 

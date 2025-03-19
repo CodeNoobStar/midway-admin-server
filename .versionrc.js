@@ -12,5 +12,6 @@ module.exports = {
 		{ type: 'build', section: '📦‍ Build System | 打包构建' },
 		{ type: 'chore', section: '🚀 Chore | 构建/工程依赖/工具' },
 		{ type: 'ci', section: '👷 Continuous Integration | CI 配置' },
+		{ type: 'config', section: '🔧 Configuration | 基础配置' },
 	],
 };
