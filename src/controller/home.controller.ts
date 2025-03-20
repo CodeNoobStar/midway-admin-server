@@ -58,9 +58,10 @@
 // }
 
 /*配置通用验证**************************************************************************************** */
-import { Body, Controller, Get, ILogger, Inject, Post } from '@midwayjs/core';
+import { Body, Controller, Get, Inject, Post } from '@midwayjs/core';
 import { HomeDTO } from '../dto/home';
 import { CommonError } from '../common/common.error';
+import { ILogger } from '@midwayjs/logger';
 
 @Controller('/')
 export class HomeController {
@@ -69,6 +70,7 @@ export class HomeController {
 
 	@Post('/')
 	async homePost(@Body() home: HomeDTO): Promise<void> {
+		this.logger.info('hello');
 		console.log(home);
 	}
 
