@@ -58,13 +58,22 @@
 // }
 
 /*配置通用验证**************************************************************************************** */
-import { Body, Controller, Post } from '@midwayjs/core';
+import { Body, Controller, Get, ILogger, Inject, Post } from '@midwayjs/core';
 import { HomeDTO } from '../dto/home';
+import { CommonError } from '../common/common.error';
 
 @Controller('/')
 export class HomeController {
+	@Inject()
+	logger: ILogger;
+
 	@Post('/')
-	async home(@Body() home: HomeDTO): Promise<void> {
+	async homePost(@Body() home: HomeDTO): Promise<void> {
 		console.log(home);
+	}
+
+	@Get('/')
+	async homeGet(): Promise<void> {
+		throw new CommonError('error');
 	}
 }

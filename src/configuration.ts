@@ -9,6 +9,7 @@ import { join } from 'path';
 import * as orm from '@midwayjs/typeorm';
 import { ReportMiddleware } from './middleware/report.middleware';
 import { ValidateErrorFilter } from './filter/validate.filter';
+import { CommonErrorFilter } from './filter/common.error';
 
 @Configuration({
 	imports: [
@@ -33,6 +34,7 @@ export class MainConfiguration {
 		this.app.useMiddleware([ReportMiddleware]);
 
 		// 测试 ValidateErrorFilter
-		this.app.useFilter([ValidateErrorFilter]);
+		// 公共业务异常方法;
+		this.app.useFilter([ValidateErrorFilter, CommonErrorFilter]);
 	}
 }
