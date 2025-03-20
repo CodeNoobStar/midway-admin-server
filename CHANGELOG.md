@@ -1,4 +1,6 @@
 变更日志
+### [0.0.1](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.0...v0.0.1) (2025-03-20)
+
 ## [0.0.0](https://github.com/CodeNoobStar/midway-admin-server/compare/v1.0.4...v0.0.0) (2025-03-20)
 
 
