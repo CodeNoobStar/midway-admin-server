@@ -57,7 +57,8 @@
 		"build": "mwtsc --cleanOutDir",
 		"prepare": "husky",
 		"commit": "git add . && git-cz",
-		"release": "standard-version"
+		"release": "standard-version",
+		"push": "npm run release && git push --follow-tags origin main # 若 push 失败，需手动处理版本号不一致问题"
 	},
 	"repository": {
 		"type": "git",
