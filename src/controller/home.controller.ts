@@ -40,19 +40,31 @@
 
 /*国际化************************************************************************************************************************ */
 
-import { Controller, Get, Inject } from '@midwayjs/core';
-import { MidwayI18nService } from '@midwayjs/i18n';
+// import { Controller, Get, Inject } from '@midwayjs/core';
+// import { MidwayI18nService } from '@midwayjs/i18n';
+
+// @Controller('/')
+// export class HomeController {
+// 	@Inject()
+// 	i18nService: MidwayI18nService;
+
+// 	@Get('/')
+// 	async home(): Promise<string> {
+// 		// 设置值
+// 		return await this.i18nService.translate('hello', {
+// 			locale: 'zh_CN',
+// 		});
+// 	}
+// }
+
+/*配置通用验证**************************************************************************************** */
+import { Body, Controller, Post } from '@midwayjs/core';
+import { HomeDTO } from '../dto/home';
 
 @Controller('/')
 export class HomeController {
-	@Inject()
-	i18nService: MidwayI18nService;
-
-	@Get('/')
-	async home(): Promise<string> {
-		// 设置值
-		return await this.i18nService.translate('hello', {
-			locale: 'zh_CN',
-		});
+	@Post('/')
+	async home(@Body() home: HomeDTO): Promise<void> {
+		console.log(home);
 	}
 }

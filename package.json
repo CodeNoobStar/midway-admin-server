@@ -13,7 +13,7 @@
 		"@midwayjs/redis": "3",
 		"@midwayjs/swagger": "3",
 		"@midwayjs/typeorm": "3",
-		"@midwayjs/validate": "^3.12.0",
+		"@midwayjs/validate": "^3.20.3",
 		"cz-emoji-conventional": "^1.2.0",
 		"mysql2": "^3.13.0",
 		"typeorm": "^0.3.21"
