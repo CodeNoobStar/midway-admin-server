@@ -1,6 +1,6 @@
 {
 	"name": "my-midway-project",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "",
 	"private": true,
 	"dependencies": {
@@ -59,7 +59,7 @@
 		"prepare": "husky",
 		"commit": "git add . && git-cz",
 		"release": "standard-version",
-		"push": "npm run release && git push --follow-tags origin main # 若 push 失败，需手动处理版本号不一致问题"
+		"push": "npm run release && git push"
 	},
 	"repository": {
 		"type": "git",
