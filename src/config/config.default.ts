@@ -33,4 +33,11 @@ export default {
 			db: 0,
 		},
 	},
+	i18n: {
+		// 把你的翻译文本放到这里
+		localeTable: {
+			en_US: require('../locales/en_US'),
+			zh_CN: require('../locales/zh_CN'),
+		},
+	},
 } as MidwayConfig;

@@ -3,6 +3,7 @@ import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
 import * as redis from '@midwayjs/redis';
+import * as i18n from '@midwayjs/i18n';
 import * as swagger from '@midwayjs/swagger';
 import { join } from 'path';
 import * as orm from '@midwayjs/typeorm';
@@ -14,6 +15,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
 		validate,
 		redis,
 		orm,
+		i18n,
 		swagger,
 		{
 			component: info,

@@ -20,20 +20,39 @@
 /************************************************************************************************ */
 
 // 访问 redis
+// import { Controller, Get, Inject } from '@midwayjs/core';
+// import { RedisService } from '@midwayjs/redis';
+
+// @Controller('/')
+// export class HomeController {
+// 	// 自动注入redis服务
+// 	@Inject()
+// 	redisService: RedisService;
+
+// 	@Get('/')
+// 	async home(): Promise<string> {
+// 		// 设置值
+// 		await this.redisService.set('foo', 'bar');
+// 		// 获取值
+// 		return await this.redisService.get('foo');
+// 	}
+// }
+
+/*国际化************************************************************************************************************************ */
+
 import { Controller, Get, Inject } from '@midwayjs/core';
-import { RedisService } from '@midwayjs/redis';
+import { MidwayI18nService } from '@midwayjs/i18n';
 
 @Controller('/')
 export class HomeController {
-	// 自动注入redis服务
 	@Inject()
-	redisService: RedisService;
+	i18nService: MidwayI18nService;
 
 	@Get('/')
 	async home(): Promise<string> {
 		// 设置值
-		await this.redisService.set('foo', 'bar');
-		// 获取值
-		return await this.redisService.get('foo');
+		return await this.i18nService.translate('hello', {
+			locale: 'zh_CN',
+		});
 	}
 }
