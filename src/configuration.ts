@@ -8,6 +8,7 @@ import * as swagger from '@midwayjs/swagger';
 import { join } from 'path';
 import * as orm from '@midwayjs/typeorm';
 import { ReportMiddleware } from './middleware/report.middleware';
+import { ValidateErrorFilter } from './filter/validate.filter';
 
 @Configuration({
 	imports: [
@@ -30,5 +31,8 @@ export class MainConfiguration {
 
 	async onReady() {
 		this.app.useMiddleware([ReportMiddleware]);
+
+		// 测试 ValidateErrorFilter
+		this.app.useFilter([ValidateErrorFilter]);
 	}
 }
