@@ -1,5 +1,16 @@
 变更日志
 
+### [0.0.12](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.10...v0.0.12) (2025-03-21)
+
+### 🔧 Chore | 构建过程或辅助工具的变动
+
+- **release:** 0.0.11 ([c62a7c3](https://github.com/CodeNoobStar/midway-admin-server/commit/c62a7c3820d921ced5525f1fce541de50f316745))
+
+### ✨ Features | 新功能
+
+- standard-version配置更新 ([9170ab0](https://github.com/CodeNoobStar/midway-admin-server/commit/9170ab085aaeed074cb1097213b2fe727a91ca74))
+- 增加开发模块模板 ([577e215](https://github.com/CodeNoobStar/midway-admin-server/commit/577e2150577a2ea8f8e6a90ab55534ca89f65c23))
+
 ### [0.0.11](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.10...v0.0.11) (2025-03-21)
 
 ### [0.0.10](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.9...v0.0.10) (2025-03-21)
