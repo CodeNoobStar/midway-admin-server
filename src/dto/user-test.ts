@@ -6,7 +6,7 @@ import { Rule, RuleType } from '@midwayjs/validate';
 export class UserTestDTO {
 	@ApiProperty({ description: '用户 ID' })
 	@Rule(RuleType.allow(null))
-	id: number;
+	id: string;
 	@ApiProperty({ description: '姓名' })
 	@Rule(RuleType.string().required().error(new Error('姓名不能为空'))) // 这个错误消息正常需要做多语言的，这里demo偷懒不做了
 	name: string;

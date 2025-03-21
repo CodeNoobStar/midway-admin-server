@@ -36,14 +36,14 @@ export class UserController {
 
 	@Del('/:id')
 	@ApiOperation({ summary: '删除用户' })
-	async remove(@Param('id') id: number) {
+	async remove(@Param('id') id: string) {
 		const user = await this.userService.findById(id);
 		await this.userService.remove(user);
 	}
 
 	@Get('/:id')
 	@ApiOperation({ summary: '获取用户' })
-	async getById(@Param('id') id: number) {
+	async getById(@Param('id') id: string) {
 		return await this.userService.findById(id);
 	}
 

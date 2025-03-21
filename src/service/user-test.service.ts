@@ -15,7 +15,7 @@ export class UserTestService {
 	}
 
 	// 通过id查询
-	async findById(id: number) {
+	async findById(id: string) {
 		return await this.userModel.findOne({
 			where: {
 				id,
@@ -36,6 +36,7 @@ export class UserTestService {
 	// 分页查询
 	async page(page: number, pageSize: number, where?: FindOptionsWhere<UserTest>) {
 		// 按照创建日期倒序返回
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const order: any = { create_date: 'desc' };
 		const [data, total] = await this.userModel.findAndCount({
 			order,
@@ -50,6 +51,7 @@ export class UserTestService {
 
 	// 根据查询条件返回全部
 	async list(where?: FindOptionsWhere<UserTest>) {
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const order: any = { create_time: 'desc' };
 		const data = await this.userModel.find({
 			where,

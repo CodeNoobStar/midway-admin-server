@@ -60,8 +60,9 @@
 /*配置通用验证**************************************************************************************** */
 import { Body, Controller, Get, Inject, Post } from '@midwayjs/core';
 import { HomeDTO } from '../dto/home';
-import { CommonError } from '../common/common.error';
+// import { CommonError } from '../common/common.error';
 import { ILogger } from '@midwayjs/logger';
+import { R } from '../common/base.error.util';
 
 @Controller('/')
 export class HomeController {
@@ -76,6 +77,7 @@ export class HomeController {
 
 	@Get('/')
 	async homeGet(): Promise<void> {
-		throw new CommonError('error');
+		// throw new CommonError('error');
+		throw R.error('error');
 	}
 }
