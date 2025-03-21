@@ -1,5 +1,11 @@
 变更日志
 
+### [0.0.10](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.9...v0.0.10) (2025-03-21)
+
+### ✨ Features | 新功能
+
+- 封装通用异常消息提示插件 ([252c0e6](https://github.com/CodeNoobStar/midway-admin-server/commit/252c0e6a5a5afe2e3684e336d14576f8f142cb2d))
+
 ### [0.0.9](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.8...v0.0.9) (2025-03-21)
 
 ### ✨ Features | 新功能
