@@ -1,6 +1,6 @@
 {
 	"name": "my-midway-project",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "",
 	"private": true,
 	"dependencies": {
@@ -73,8 +73,7 @@
 		"cz-emoji-chinese": {
 			"skipQuestions": [
 				"scope",
-				"issues",
-				"body"
+				"issues"
 			],
 			"types": [
 				{
