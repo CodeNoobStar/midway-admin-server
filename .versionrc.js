@@ -1,5 +1,10 @@
 module.exports = {
 	header: '变更日志',
+	skip: {
+		tag: true, // 跳过打标签
+		commit: false, // 保留自动提交（更新 CHANGELOG 和 package.json）
+		push: false, // 跳过自动推送
+	},
 	types: [
 		{ type: 'fix', section: '🐛 Bug Fixes | Bug 修复' },
 		{ type: 'style', section: '🎨 Styles | 风格' },
