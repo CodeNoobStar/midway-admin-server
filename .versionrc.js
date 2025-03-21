@@ -1,5 +1,5 @@
 module.exports = {
-	header: '变更日志', // 可自定义添加生成的changelog头部内容
+	header: '变更日志',
 	types: [
 		{ type: 'fix', section: '🐛 Bug Fixes | Bug 修复' },
 		{ type: 'style', section: '🎨 Styles | 风格' },
@@ -22,11 +22,4 @@ module.exports = {
 		{ type: 'ci', section: '👷 Continuous Integration | CI 配置' },
 		{ type: 'chore', section: '🔧 Chore | 构建过程或辅助工具的变动' },
 	],
-	// 跳过相关内容
-	// skip: {
-	//     bump: false, // 是否跳过更改版本
-	//     changelog: false, // 是否跳过生产changelog
-	//     commit: false, // 是否跳过自动commit
-	//     tag: false, // 是否跳过打tag
-	// },
 };

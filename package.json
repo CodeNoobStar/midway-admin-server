@@ -4,18 +4,18 @@
 	"description": "",
 	"private": true,
 	"dependencies": {
-		"@midwayjs/bootstrap": "^3.12.0",
-		"@midwayjs/core": "^3.12.0",
-		"@midwayjs/i18n": "3",
-		"@midwayjs/info": "^3.12.0",
-		"@midwayjs/koa": "^3.12.0",
-		"@midwayjs/logger": "^3.1.0",
-		"@midwayjs/redis": "3",
-		"@midwayjs/swagger": "3",
-		"@midwayjs/typeorm": "3",
+		"@midwayjs/bootstrap": "^3.20.3",
+		"@midwayjs/core": "^3.20.3",
+		"@midwayjs/i18n": "^3.20.3",
+		"@midwayjs/info": "^3.20.3",
+		"@midwayjs/koa": "^3.20.3",
+		"@midwayjs/logger": "^3.4.2",
+		"@midwayjs/redis": "^3.20.3",
+		"@midwayjs/swagger": "^3.20.3",
+		"@midwayjs/typeorm": "^3.20.3",
 		"@midwayjs/validate": "^3.20.3",
-		"cz-emoji-conventional": "^1.2.0",
-		"mysql2": "^3.13.0",
+		"cz-emoji-conventional": "^1.2.1",
+		"mysql2": "^3.14.0",
 		"typeorm": "^0.3.21"
 	},
 	"devDependencies": {
@@ -23,25 +23,26 @@
 		"@commitlint/config-conventional": "^19.8.0",
 		"@eslint/eslintrc": "^3.3.0",
 		"@eslint/js": "^9.22.0",
-		"@midwayjs/mock": "^3.12.0",
-		"@types/jest": "^29.2.0",
-		"@types/node": "14",
-		"@typescript-eslint/eslint-plugin": "^8.26.1",
-		"@typescript-eslint/parser": "^8.26.1",
+		"@midwayjs/mock": "^3.20.3",
+		"@types/jest": "^29.5.14",
+		"@types/node": "^14.18.63",
+		"@typescript-eslint/eslint-plugin": "^8.27.0",
+		"@typescript-eslint/parser": "^8.27.0",
 		"commitizen": "^4.3.1",
 		"commitlint-config-gitmoji": "^2.3.1",
-		"cross-env": "^6.0.0",
+		"cross-env": "^6.0.3",
 		"cz-conventional-emoji": "^1.0.2",
 		"cz-emoji-chinese": "^0.3.1",
 		"eslint": "9.22.0",
 		"globals": "^16.0.0",
 		"husky": "^9.1.7",
-		"jest": "^29.2.2",
+		"jest": "^29.7.0",
 		"lint-staged": "^15.5.0",
 		"mwtsc": "^1.15.1",
+		"prettier": "^3.5.3",
 		"standard-version": "^9.5.0",
 		"swagger-ui-dist": "^5.20.1",
-		"ts-jest": "^29.0.3",
+		"ts-jest": "^29.2.6",
 		"typescript": "~5.2.2"
 	},
 	"engines": {
@@ -78,19 +79,19 @@
 			"types": [
 				{
 					"emoji": "🐛",
-					"code": "bug:",
+					"code": "fix:",
 					"description": "修复 Bug",
 					"name": "fix"
 				},
 				{
 					"emoji": "🎨",
-					"code": "art:",
+					"code": "style:",
 					"description": "改进代码的结构/格式",
 					"name": "style"
 				},
 				{
 					"emoji": "✨",
-					"code": "sparkles:",
+					"code": "feature:",
 					"description": "引入新特性",
 					"name": "feature"
 				},
@@ -102,13 +103,13 @@
 				},
 				{
 					"emoji": "💄",
-					"code": "lipstick:",
+					"code": "ui:",
 					"description": "更新UI和样式文件",
 					"name": "ui"
 				},
 				{
 					"emoji": "📝",
-					"code": "pencil:",
+					"code": "docs:",
 					"description": "写文档",
 					"name": "docs"
 				},
@@ -120,79 +121,79 @@
 				},
 				{
 					"emoji": "🔖",
-					"code": "bookmark:",
+					"code": "release:",
 					"description": "发布版本",
 					"name": "release"
 				},
 				{
 					"emoji": "🚧",
-					"code": "construction:",
+					"code": "wip:",
 					"description": "正在进行中的工作",
 					"name": "wip"
 				},
 				{
 					"emoji": "🔧",
-					"code": "wrench:",
+					"code": "config:",
 					"description": "修改配置文件",
 					"name": "config"
 				},
 				{
 					"emoji": "🔀",
-					"code": "twisted_rightwards_arrows:",
+					"code": "merge:",
 					"description": "合并分支",
 					"name": "merge"
 				},
 				{
 					"emoji": "♻️",
-					"code": "recycle:",
+					"code": "refactor:",
 					"description": "代码重构",
 					"name": "refactor"
 				},
 				{
 					"emoji": "⚡",
-					"code": "zap:",
+					"code": "perf:",
 					"description": "性能优化",
 					"name": "perf"
 				},
 				{
 					"emoji": "✅",
-					"code": "white_check_mark:",
+					"code": "test:",
 					"description": "测试",
 					"name": "test"
 				},
 				{
 					"emoji": "⏪",
-					"code": "rewind:",
+					"code": "revert:",
 					"description": "回退",
 					"name": "revert"
 				},
 				{
 					"emoji": "📦",
-					"code": "package:",
+					"code": "build:",
 					"description": "打包构建",
 					"name": "build"
 				},
 				{
 					"emoji": "🚀",
-					"code": "rocket:",
+					"code": "update:",
 					"description": "构建/工程依赖/工具升级",
 					"name": "update"
 				},
 				{
 					"emoji": "🚀",
-					"code": "rocket:",
+					"code": "tool:",
 					"description": "工具升级",
 					"name": "tool"
 				},
 				{
 					"emoji": "👷",
-					"code": "construction_worker:",
+					"code": "ci:",
 					"description": "CI 配置",
 					"name": "ci"
 				},
 				{
 					"emoji": "🔧",
-					"code": "wrench:",
+					"code": "chore:",
 					"description": "构建过程或辅助工具的变动",
 					"name": "chore"
 				}
