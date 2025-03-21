@@ -1,6 +1,6 @@
 {
 	"name": "my-midway-project",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "",
 	"private": true,
 	"dependencies": {
@@ -142,6 +142,60 @@
 					"code": "twisted_rightwards_arrows:",
 					"description": "合并分支",
 					"name": "merge"
+				},
+				{
+					"emoji": "♻️",
+					"code": "recycle:",
+					"description": "代码重构",
+					"name": "refactor"
+				},
+				{
+					"emoji": "⚡",
+					"code": "zap:",
+					"description": "性能优化",
+					"name": "perf"
+				},
+				{
+					"emoji": "✅",
+					"code": "white_check_mark:",
+					"description": "测试",
+					"name": "test"
+				},
+				{
+					"emoji": "⏪",
+					"code": "rewind:",
+					"description": "回退",
+					"name": "revert"
+				},
+				{
+					"emoji": "📦",
+					"code": "package:",
+					"description": "打包构建",
+					"name": "build"
+				},
+				{
+					"emoji": "🚀",
+					"code": "rocket:",
+					"description": "构建/工程依赖/工具升级",
+					"name": "update"
+				},
+				{
+					"emoji": "🚀",
+					"code": "rocket:",
+					"description": "工具升级",
+					"name": "tool"
+				},
+				{
+					"emoji": "👷",
+					"code": "construction_worker:",
+					"description": "CI 配置",
+					"name": "ci"
+				},
+				{
+					"emoji": "🔧",
+					"code": "wrench:",
+					"description": "构建过程或辅助工具的变动",
+					"name": "chore"
 				}
 			]
 		}
