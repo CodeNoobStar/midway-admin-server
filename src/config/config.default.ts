@@ -1,4 +1,5 @@
 import { MidwayConfig } from '@midwayjs/core';
+import { EverythingSubscriber } from '../typeorm-event-subscriber';
 
 export default {
 	// use for cookie sign key, should change to your own and keep security
@@ -22,6 +23,7 @@ export default {
 				logging: true,
 				// 扫描entity文件夹
 				entities: ['**/entity/*{.ts,.js}'],
+				subscribers: [EverythingSubscriber],
 			},
 		},
 	},

@@ -17,7 +17,18 @@ export default [
 			},
 		},
 	},
-	{ ignores: ['node_modules', 'script', 'dist', 'test', 'jest.config.js', 'typings'] },
+	{
+		ignores: [
+			//
+			'node_modules',
+			'script',
+			'dist',
+			'test',
+			'jest.config.js',
+			'typings',
+			'src/config/**.ts',
+		],
+	},
 	{
 		plugins: {
 			'@typescript-eslint': tseslint,
