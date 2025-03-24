@@ -57,3 +57,11 @@ $ npm start
     - 自动生成 api 文档
 - apidoc
     - 自动生成 api 文档
+
+### 模块化开发模板 script
+
+命令执行
+
+```js
+ node ./script/create-module 模块名称
+```

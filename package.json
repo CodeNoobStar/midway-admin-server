@@ -14,7 +14,9 @@
 		"@midwayjs/swagger": "^3.20.3",
 		"@midwayjs/typeorm": "^3.20.3",
 		"@midwayjs/validate": "^3.20.3",
+		"bcryptjs": "^3.0.2",
 		"cz-emoji-conventional": "^1.2.1",
+		"loadsh": "^0.0.4",
 		"mysql2": "^3.14.0",
 		"typeorm": "^0.3.21"
 	},
@@ -25,6 +27,7 @@
 		"@eslint/js": "^9.22.0",
 		"@midwayjs/mock": "^3.20.3",
 		"@types/jest": "^29.5.14",
+		"@types/lodash": "^4.17.16",
 		"@types/node": "^14.18.63",
 		"@typescript-eslint/eslint-plugin": "^8.27.0",
 		"@typescript-eslint/parser": "^8.27.0",

@@ -63,8 +63,10 @@ import { HomeDTO } from '../dto/home';
 // import { CommonError } from '../common/common.error';
 import { ILogger } from '@midwayjs/logger';
 import { R } from '../common/base.error.util';
+import { ApiTags } from '@midwayjs/swagger';
 
 @Controller('/')
+@ApiTags('技能点自测模块')
 export class HomeController {
 	@Inject()
 	logger: ILogger;
