@@ -1,7 +1,7 @@
 import { Entity, Column } from 'typeorm';
 import { BaseEntity } from '../../../common/base.entity';
 import { omit } from 'lodash';
-import { UserVO } from '../vo/user';
+import { UserVO } from '../vo/User';
 
 @Entity('sys_user')
 // 表

@@ -1,6 +1,6 @@
-import { Rule } from '@midwayjs/validate';
+import { Rule, RuleType } from '@midwayjs/validate';
 import { ApiProperty } from '@midwayjs/swagger';
-import { UserEntity } from '../entity/user';
+import { UserEntity } from '../entity/User';
 import { BaseDTO } from '../../../common/base-dto';
 import { requiredString, phone, email } from '../../../common/common-validate-rules';
 import { R } from '../../../common/base.error.util';
@@ -27,5 +27,6 @@ export class UserDTO extends BaseDTO<UserEntity> {
 	avatar?: string;
 
 	@ApiProperty({ description: '性别（0:女，1:男）', nullable: true }) // 可为空
+	@Rule(RuleType.number().integer().allow(null).valid(0, 1).error(R.validateError('性别格式不正确')))
 	sex?: number;
 }
