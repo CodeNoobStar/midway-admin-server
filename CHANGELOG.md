@@ -1,5 +1,21 @@
 变更日志
 
+### [0.0.15](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.10...v0.0.15) (2025-03-24)
+
+### 🔧 Chore | 构建过程或辅助工具的变动
+
+- **release:** 0.0.11 ([c62a7c3](https://github.com/CodeNoobStar/midway-admin-server/commit/c62a7c3820d921ced5525f1fce541de50f316745))
+- **release:** 0.0.12 ([96147a7](https://github.com/CodeNoobStar/midway-admin-server/commit/96147a7dfe2891c8321e020bf724b634dc11e003))
+- **release:** 0.0.13 ([ac040bb](https://github.com/CodeNoobStar/midway-admin-server/commit/ac040bb63e11b1c945ee44b32825d0ee8c90fa78))
+- **release:** 0.0.14 ([a00fe28](https://github.com/CodeNoobStar/midway-admin-server/commit/a00fe28ebac531f657982890f025ffed61153840))
+
+### ✨ Features | 新功能
+
+- standard-version配置更新 ([9170ab0](https://github.com/CodeNoobStar/midway-admin-server/commit/9170ab085aaeed074cb1097213b2fe727a91ca74))
+- 使用scipt中的模板创建 user 模块 ([a47a44c](https://github.com/CodeNoobStar/midway-admin-server/commit/a47a44c874f08f7c697151c3facb12b5d13a2ec9))
+- 增加开发模块模板 ([577e215](https://github.com/CodeNoobStar/midway-admin-server/commit/577e2150577a2ea8f8e6a90ab55534ca89f65c23))
+- 更改user模块 ([17d799e](https://github.com/CodeNoobStar/midway-admin-server/commit/17d799e3b94cd889862da8a0bf3644548b45be51))
+
 ### [0.0.14](https://github.com/CodeNoobStar/midway-admin-server/compare/v0.0.10...v0.0.14) (2025-03-24)
 
 ### ✨ Features | 新功能
